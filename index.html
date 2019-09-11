@@ -3,9 +3,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Resume</title>
-
+  <link href="https://fonts.googleapis.com/css?family=Philosopher&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Noticia+Text&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="css/index.css">
 
   <!--[if lt IE 9]>
@@ -13,7 +14,92 @@
   <![endif]-->
 </head>
 
+<div class="container">
+<header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#">Portfolio</a>
+      <a href="#contact">Contact</a> 
+    </nav>
+    <section class="headerBanner" id="home">
+      <div class="graphicOne">
+        <img src="#" alt="floral graphic"/>
+      </div>
+      <div class="bannerText">
+        <h1 class="resume">My Resume</h1>
+        <h1 class="name">Jessica G Cooper</h1>
+        <h1 class="profession">Web Dev</h1>
+      </div>
+      <div class="graphicTwo">
+        <img src="#" alt="floral graphic"/>
+      </div>
+    </section><!--endheaderBanner-->
+  </header>
 <body>
-  <h1>My Resume</h1>
+  <section id="contact">
+    <p class="contactText">
+      As time allows, I like to mix my work up with side projects.  Sign up below if you're interested.
+    </p>
+    <button>Create Something Together</button>
+  </section><!--endContactSection-->
+  <section class="middleContent" id="about">
+    <div class="aboutText">
+      <h2>
+        Who I Am
+      </h2>
+      <p>
+        My fresh knowledge and skills in full stack web development are bolstered by a varied background in office administration, civil law (paralegal work), mathematics education, and customer service. Originally from a tropical island I was a proud member of the first family in the neighbourhood to own a computer, and I've been loving technology since that time.  As a math nerd with artistic leanings and serious reading and learning proclivities, I never dreamed one day a profession that combined all these interests would ever be an option.  Web development lets my anaylytical side and my creative side work together to create awesome things the whole world can see!  
+      </p>
+    </div><!--end column one of about-->
+    <div class="aboutList">
+      <h2>
+        What I Do Best
+      </h2>
+      <div class="list">
+        <h3>Consuming Audio Books</h3>
+        <h3>HTML and CSS</h3>
+        <h3>Mathematics</h3>
+        <h3>Making Quilts</h3>
+        <h3>Researching</h3>
+      </div><!--end column two about me-->
+    </div>
+  </section><!--end middleContent-->
+  <section class="Work History">
+      <table style="width:100%">
+        <caption>Work History</caption>  
+          <tr class="rowOneHeaders">
+            <th>Years</th>
+            <th>Company</th>
+            <th>Title</th>
+            <th>Skills Used</th>
+          </tr>
+          <tr class="rowTwo">
+            <td>4</td>
+            <td>Awesome Law Office</td>
+            <td>Legal Administrative Assistant</td>
+            <td>Almost Everything</td>
+          </tr>
+          <tr class="rowThree">
+            <td>1.5</td>
+            <td>Awesome Sewing Center</td>
+            <td>Fabric and Design Consultant</td>
+            <td>Geometry and Color Design</td>
+          </tr>
+          <tr class="rowFour">
+            <td>2</td>
+            <td>Awesome School</td>
+            <td>Mathematics Teacher</td>
+            <td>Geometry and Patience</td>
+          </tr>
+        </table>
+  </section><!--endWorkHistory-->
+  <footer>
+    <p>
+      Copyright Awesomeness 2019
+    </p>
+  </footer>
+
 </body>
+</div>
 </html>

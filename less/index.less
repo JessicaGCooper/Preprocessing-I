@@ -50,10 +50,89 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 html, body {
-    height: 100%;
+	height: 100%;
+	font-size: 62.5%;
+}
+
+//start my code
+
+@headingFont: 'Philosopher', sans-serif;
+@bodyFont: 'Noticia Text', serif;
+
+@backgroundOne: black;
+@backgroundTwo: silver;
+@textDefault: white;
+@textTeal: #0099cc;
+
+.flexCenterRows(){
+   display: flex;
+   justify-content: center;
+}
+
+.flexColumn(){
+	display: flex;
+	display-direction: column;
+}
+
+.container * {
+	border: 1px solid dodgerblue;
+}
+
+
+.container {
+	width: 80%;
+	margin-right: 10%;
+	margin-left: 10%;
+}
+
+header {
+
+	nav {
+	  display: flex;
+	  justify-content: flex-end;
+	  background-color: @backgroundOne;
+	  margin-top: 30px;
+
+		 a {
+			color: @textDefault;
+			font-size: 2rem;
+			text-decoration: none;
+			padding: 10px 20px;
+			font-family: @headingFont;
+		 }
+	}
+
+	.headerBanner {
+		.flexCenterRows();
+		background-color: @backgroundTwo;
+
+		.bannerText {
+			.flexColumn();
+			align-content: center;
+			justify-content: center;
+			flex-wrap: wrap;
+			height: 500px;
+			width: 50%;
+
+			.resume {
+			   font-size: 3rem;
+			}
+
+			.name {
+				font-size: 4rem;
+				color: @textTeal;
+			}
+		}
+	}
+}
+
+@media and screen (max-width: 500px){
+    .container {
+		width: 100%;
+	}
 }
 
