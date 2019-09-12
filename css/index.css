@@ -135,9 +135,6 @@ body {
   height: 100%;
   font-size: 62.5%;
 }
-.container * {
-  border: 1px solid dodgerblue;
-}
 .container {
   width: 80%;
   margin-right: 10%;
@@ -159,26 +156,233 @@ header nav a {
 header .headerBanner {
   display: flex;
   justify-content: center;
-  background-color: silver;
+  background-color: #d8eced;
 }
-header .headerBanner .bannerText {
+header .headerBanner .graphicOne {
+  width: 25%;
+}
+header .headerBanner .graphicOne img {
+  width: 100%;
+}
+header .headerBanner .bannerTextParent {
   display: flex;
   display-direction: column;
-  align-content: center;
-  justify-content: center;
   flex-wrap: wrap;
-  height: 500px;
+  align-content: center;
+  height: 300px;
   width: 50%;
 }
-header .headerBanner .bannerText .resume {
-  font-size: 3rem;
+header .headerBanner .bannerTextParent .bannerText {
+  align-items: center;
+  width: 100%;
 }
-header .headerBanner .bannerText .name {
-  font-size: 4rem;
-  color: #0099cc;
+header .headerBanner .bannerTextParent .bannerText .resume {
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: 'Noticia Text', serif;
 }
-@media and screen (max-width: 500px) {
-  .container {
-    width: 100%;
+header .headerBanner .bannerTextParent .bannerText .name {
+  font-size: 5.5rem;
+  color: #2C717D;
+  font-family: 'Philosopher', sans-serif;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+@media (max-width: 500px) {
+  header .headerBanner .bannerTextParent .bannerText .name {
+    font-size: rem;
   }
+}
+header .headerBanner .bannerTextParent .bannerText .profession {
+  font-size: 2.5rem;
+  text-align: center;
+  font-family: 'Noticia Text', serif;
+}
+header .headerBanner .graphicTwo {
+  width: 25%;
+}
+header .headerBanner .graphicTwo img {
+  width: 100%;
+}
+#contact {
+  display: flex;
+  display-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  height: 200px;
+  width: 100%;
+  background: black;
+  font-family: 'Noticia Text', serif;
+}
+#contact .contactText {
+  margin-right: 25%;
+  margin-left: 25%;
+  width: 50%;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  padding-bottom: 20px;
+  line-height: 1.5;
+}
+@media (max-width: 500px) {
+  #contact .contactText {
+    font-size: 1.5rem;
+  }
+}
+#contact button {
+  font-size: 1.75rem;
+  padding: 15px 15px;
+  border: 1px solid black;
+  border-radius: 10px;
+  font-family: 'Noticia Text', serif;
+}
+@media (max-width: 500px) {
+  #contact button {
+    font-size: 1.5rem;
+  }
+}
+#contact button:hover {
+  background: #2C717D;
+  color: #d8eced;
+}
+.middleContent {
+  display: flex;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .middleContent {
+    flex-direction: column;
+  }
+}
+.middleContent .aboutText {
+  width: 47%;
+  margin-right: 1%;
+  margin-left: 2%;
+  margin-top: 20px;
+  padding-left: 1%;
+  padding-right: 1%;
+  background: #d8eced;
+}
+@media (max-width: 500px) {
+  .middleContent .aboutText {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+.middleContent .aboutText h2 {
+  font-size: 2.5rem;
+  font-family: 'Philosopher', sans-serif;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #2C717D;
+}
+.middleContent .aboutText p {
+  font-size: 1.75rem;
+  font-family: 'Noticia Text', serif;
+  line-height: 1.2;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.middleContent .aboutList {
+  width: 47%;
+  margin-left: 1%;
+  margin-right: 2%;
+  margin-top: 20px;
+  padding-left: 1%;
+  padding-right: 1%;
+  background: #d8eced;
+}
+@media (max-width: 500px) {
+  .middleContent .aboutList {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+.middleContent .aboutList h2 {
+  font-size: 2.5rem;
+  font-family: 'Philosopher', sans-serif;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #2C717D;
+}
+.middleContent .aboutList .list {
+  style: flex;
+}
+.middleContent .aboutList .list h3 {
+  font-size: 1.75rem;
+  font-family: 'Noticia Text', serif;
+  line-height: 1.2;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.workHistory {
+  display: flex;
+  justify-content: center;
+  margin-right: 2%;
+  margin-left: 2%;
+  margin-top: 20px;
+  width: 96%;
+}
+@media (max-width: 500px) {
+  .workHistory {
+    width: 100%;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+.workHistory table {
+  width: 100%;
+  margin-bottom: 30px;
+  background: #d8eced;
+}
+.workHistory table caption {
+  font-size: 2.5rem;
+  font-family: 'Philosopher', sans-serif;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  background: #d8eced;
+  border-bottom: 2px solid #2C717D;
+}
+.workHistory table th {
+  text-align: left;
+  font-size: 2rem;
+  font-family: 'Philosopher', sans-serif;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  text-decoration: underline;
+}
+@media (max-width: 500px) {
+  .workHistory table th {
+    font-size: 1.5rem;
+  }
+}
+.workHistory table td {
+  font-size: 1.75rem;
+  font-family: 'Noticia Text', serif;
+  line-height: 1.2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+@media (max-width: 500px) {
+  .workHistory table td {
+    font-size: 1.25rem;
+  }
+}
+footer {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-family: 'Noticia Text', serif;
+  line-height: 1.2;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background: black;
+  color: white;
 }
